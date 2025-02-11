@@ -1,0 +1,28 @@
+/* postcss-import */
+/* tailwindcss */
+/* autoprefixer */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .dark-mode {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+@layer components {
+  .dark-mode .logo:hover,
+  .dark-mode .logo.react:hover {
+    filter: drop-shadow(0 0 2em rgba(255, 255, 255, 0.66));
+  }
+
+  .dark-mode .card {
+    @apply bg-gray-800 text-white;
+  }
+
+  .dark-mode .read-the-docs {
+    @apply text-gray-400;
+  }
+}
